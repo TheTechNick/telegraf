@@ -1,8 +1,6 @@
 package systemd_units
 
 import (
-	"os"
-
 	"github.com/coreos/go-systemd/dbus"
 	"github.com/influxdata/telegraf"
 	// "github.com/influxdata/telegraf/internal"
@@ -30,11 +28,6 @@ func (s *Systemd) SampleConfig() string {
 
 // Gather gets all metric fields and tags and returns any errors it encounters
 func (s *Systemd) Gather(acc telegraf.Accumulator) error {
-	hostname, err := os.Hostname()
-	if err != nil {
-		return err
-	}
-
 	conn, err := dbus.NewSystemdConnection()
 	if err != nil {
 		return err
@@ -55,7 +48,7 @@ func (s *Systemd) Gather(acc telegraf.Accumulator) error {
 			fields := map[string]interface{}{
 				"active": isActive,
 			}
-			tags := map[string]string{"host": hostname, "name": unit.Name, "state": state}
+			tags := map[string]string{"name": unit.Name, "state": state}
 
 			acc.AddFields("systemd_units", fields, tags)
 		}
