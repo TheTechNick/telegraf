@@ -4,6 +4,7 @@ github.com/amir/raidman 53c1b967405155bfc8758557863bf2e14f814687
 github.com/aws/aws-sdk-go 13a12060f716145019378a10e2806c174356b857
 github.com/beorn7/perks 3ac7bf7a47d159a033b107610db8a1b6575507a4
 github.com/cenkalti/backoff 4dc77674aceaabba2c7e3da25d4c823edfb73f99
+github.com/coreos/go-systemd b32b8467dbea18858bfebf65c1a6a761090f2c31
 github.com/couchbase/go-couchbase cb664315a324d87d19c879d9cc67fda6be8c2ac1
 github.com/couchbase/gomemcached a5ea6356f648fec6ab89add00edd09151455b4b2
 github.com/couchbase/goutils 5823a0cbaaa9008406021dc5daf80125ea30bba6
@@ -17,6 +18,7 @@ github.com/eapache/queue ded5959c0d4e360646dc9e9908cff48666781367
 github.com/eclipse/paho.mqtt.golang 0f7a459f04f13a41b7ed752d47944528d4bf9a86
 github.com/go-sql-driver/mysql 1fca743146605a172a266e1654e01e5cd5669bee
 github.com/gobwas/glob 49571a1557cd20e6a2410adc6421f85b66c730b5
+github.com/godbus/dbus 32c6cc29c14570de4cf6d7e7737d68fb2d01ad15
 github.com/golang/protobuf 552c7b9542c194800fd493123b3798ef0a832032
 github.com/golang/snappy 427fb6fc07997f43afa32f35e850833760e489a7
 github.com/gonuts/go-shellquote e842a11b24c6abfb3dd27af69a17f482e4b483c2
